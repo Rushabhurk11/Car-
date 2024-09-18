@@ -1,0 +1,127 @@
+/*  */
+/* /* body{ */
+    /* height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* } */ */
+/*  */
+/* /* .car{ */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* border: 1px solid; */
+/*  */
+/* } */ */
+/*  */
+div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.wheel1 {
+    background-image: url(mustang_tire.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 210px;
+    margin-left: 140px;
+    width: 110px;
+    height: 110px;
+    bottom: 01px;
+    left: 700px;
+    /* border: 1px solid; */
+}
+
+.wheel2 {
+    background-image: url(mustang_tire.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 210px;
+    margin-right: 105px;
+    width: 110px;
+    height: 110px;
+    bottom: 77px;
+    left: 43px;
+    /* border: 1px solid; */
+    /* transform: rotate(360deg); */
+}
+
+
+/* transform */
+
+
+body{
+    height: 100vh;
+    display: flex;
+     align-items:center ;
+     justify-content: left;
+}
+div.car:hover{
+    /* transform: translate(20000px,-500px); */
+    transform: translate(20000px);
+
+    transition-duration: 20s;
+
+}
+/*  */
+.car{ 
+    background-image: url(mustang.png);
+    height: 400px;
+    width: 800px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    /* visibility: hidden; */
+    
+    
+ }
+
+ 
+/* div:hover{ */
+    /*  */
+    /* transform: scale(0.50); */
+    /* transform: skew(36deg); */
+    /* transform: translate(100px,-100px); */
+    /* background-color: yellow; */
+    /* transition-duration: 1s; */
+
+
+/*  */
+
+
+
+/* Wheel's Styling and positioning */
+.wheel1 {
+    /* position: absolute; */
+    animation: wheelanimation ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.6s;
+}
+
+/* Rotation of the wheels */
+@keyframes wheelanimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .wheel:hover{
+    visibility: visible;
+}  */
+.wheel2 {
+    /* position: absolute; */
+    animation: wheelanimation2 linear .6s infinite;
+}
+
+
+@keyframes wheelanimation2 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* ----------------------------------------------------- */
